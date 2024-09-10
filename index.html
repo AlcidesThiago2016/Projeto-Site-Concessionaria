@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thiago Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wgth@400;700&display-swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Thiago Motors</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Em destaque</a>
+                </li>
+                <li>
+                    <a href="#">Promoções</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </div>
+        </nav>
+    </header> 
+    <div id="carrosel-imagem">
+        <img src="./images/slide1.png" alt="Porche 911 Carrera">
+        <img src="./images/slide2.png" alt="Bmw 900i">
+        <img src="./images/slide3.png" alt="Mustang GT">
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+    <script>
+        $(document).ready(function(){
+            $('#carrosel-imagem').slick({
+                autoplay: true
+            });
+        })
+    </script>
 </body>
 </html>
